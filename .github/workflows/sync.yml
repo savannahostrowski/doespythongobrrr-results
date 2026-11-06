@@ -1,0 +1,57 @@
+name: Import interpreter results
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [benchmark_completed]
+  # Recovery path if a completion notification is missed.
+  schedule:
+    - cron: '43 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-interpreter-results
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.14'
+      - name: Test importer
+        run: python -m unittest discover -s tests -v
+      - name: Import new measurements
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/import_results.py
+      - name: Commit archive updates
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.json import-state.json raw summaries
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            git commit -m 'Import interpreter measurements'
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Notify Python dashboard
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.DASHBOARD_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo 'Dashboard will pick up the update on its scheduled refresh.'
+            exit 0
+          fi
+          gh api --method POST repos/savannahostrowski/doespythongobrrr/dispatches \
+            -f event_type=benchmark_completed

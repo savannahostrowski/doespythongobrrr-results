@@ -1,0 +1,620 @@
+{
+  "benchmarks": {
+    "2to3": {
+      "mean": 0.39416178738077484,
+      "samples": 60,
+      "stdev": 0.002715880017680155
+    },
+    "ascii85_large": {
+      "mean": 0.023175688313009837,
+      "samples": 60,
+      "stdev": 5.7685765613381145e-05
+    },
+    "ascii85_small": {
+      "mean": 0.0010324293410424918,
+      "samples": 60,
+      "stdev": 6.361200995224161e-06
+    },
+    "async_generators": {
+      "mean": 0.5565103271044791,
+      "samples": 60,
+      "stdev": 0.012271732658126207
+    },
+    "async_tree_cpu_io_mixed": {
+      "mean": 0.9371893165322641,
+      "samples": 60,
+      "stdev": 0.03101232572239142
+    },
+    "async_tree_cpu_io_mixed_tg": {
+      "mean": 0.9606114203110337,
+      "samples": 60,
+      "stdev": 0.03511445123921773
+    },
+    "async_tree_io": {
+      "mean": 1.3468697256563853,
+      "samples": 60,
+      "stdev": 0.02620955291405527
+    },
+    "async_tree_io_tg": {
+      "mean": 1.4198304650373756,
+      "samples": 60,
+      "stdev": 0.08002735912313766
+    },
+    "async_tree_memoization": {
+      "mean": 0.7359957735519856,
+      "samples": 60,
+      "stdev": 0.041874426561773495
+    },
+    "async_tree_memoization_tg": {
+      "mean": 0.7023420327498268,
+      "samples": 60,
+      "stdev": 0.030839590124268516
+    },
+    "async_tree_none": {
+      "mean": 0.5273960091794531,
+      "samples": 60,
+      "stdev": 0.021689765468976854
+    },
+    "async_tree_none_tg": {
+      "mean": 0.5636191184166819,
+      "samples": 60,
+      "stdev": 0.0389488708132018
+    },
+    "asyncio_tcp": {
+      "mean": 0.662025484101226,
+      "samples": 60,
+      "stdev": 0.031481249951507126
+    },
+    "asyncio_tcp_ssl": {
+      "mean": 2.79867866144826,
+      "samples": 60,
+      "stdev": 0.021540818964264793
+    },
+    "asyncio_websockets": {
+      "mean": 0.8169210791277389,
+      "samples": 60,
+      "stdev": 0.0019021065228441926
+    },
+    "base16_large": {
+      "mean": 0.016701106077137713,
+      "samples": 60,
+      "stdev": 1.4085835110654555e-05
+    },
+    "base16_small": {
+      "mean": 0.0008688155161507893,
+      "samples": 60,
+      "stdev": 4.221377846942369e-06
+    },
+    "base32_large": {
+      "mean": 0.004730607302917633,
+      "samples": 60,
+      "stdev": 4.2503810383992075e-06
+    },
+    "base32_small": {
+      "mean": 0.0004370661786500326,
+      "samples": 60,
+      "stdev": 2.9387877519836118e-06
+    },
+    "base64_large": {
+      "mean": 0.004107224076869897,
+      "samples": 60,
+      "stdev": 2.3367556416948454e-06
+    },
+    "base64_small": {
+      "mean": 0.00048705014402609476,
+      "samples": 60,
+      "stdev": 3.3678945019124983e-06
+    },
+    "base85_large": {
+      "mean": 0.007947871161741204,
+      "samples": 60,
+      "stdev": 4.491990603132233e-06
+    },
+    "base85_small": {
+      "mean": 0.0003747151812907153,
+      "samples": 60,
+      "stdev": 7.90513212721405e-07
+    },
+    "bench_mp_pool": {
+      "mean": 0.11810083092811206,
+      "samples": 60,
+      "stdev": 0.068533721737435
+    },
+    "bench_thread_pool": {
+      "mean": 0.0011170957208378241,
+      "samples": 60,
+      "stdev": 9.578980638292709e-06
+    },
+    "bpe_tokeniser": {
+      "mean": 6.440271910186857,
+      "samples": 60,
+      "stdev": 0.050991876767864576
+    },
+    "chameleon": {
+      "mean": 0.01972210966438676,
+      "samples": 60,
+      "stdev": 8.229601221383698e-05
+    },
+    "chaos": {
+      "mean": 0.08107341756112874,
+      "samples": 60,
+      "stdev": 0.00025859644569282237
+    },
+    "comprehensions": {
+      "mean": 2.2985643856069752e-05,
+      "samples": 60,
+      "stdev": 2.784124791263267e-07
+    },
+    "connected_components": {
+      "mean": 0.7348409081188341,
+      "samples": 60,
+      "stdev": 0.0019401053987338963
+    },
+    "coroutines": {
+      "mean": 0.03602019812290867,
+      "samples": 60,
+      "stdev": 0.00014236969606776456
+    },
+    "coverage": {
+      "mean": 0.12348331211445232,
+      "samples": 60,
+      "stdev": 0.0007745016209720049
+    },
+    "create_gc_cycles": {
+      "mean": 0.006705104686746685,
+      "samples": 60,
+      "stdev": 5.2903898787301764e-05
+    },
+    "crypto_pyaes": {
+      "mean": 0.10084272458528479,
+      "samples": 60,
+      "stdev": 0.00040393661137713347
+    },
+    "deepcopy": {
+      "mean": 0.00034091222263062565,
+      "samples": 60,
+      "stdev": 3.2636542764401996e-06
+    },
+    "deepcopy_memo": {
+      "mean": 3.97231961566528e-05,
+      "samples": 60,
+      "stdev": 6.656662294717118e-07
+    },
+    "deepcopy_reduce": {
+      "mean": 3.900158511290405e-06,
+      "samples": 60,
+      "stdev": 2.7701936260252238e-08
+    },
+    "deltablue": {
+      "mean": 0.004672636280398971,
+      "samples": 60,
+      "stdev": 3.0333359203501683e-05
+    },
+    "django_template": {
+      "mean": 0.0481314331991598,
+      "samples": 60,
+      "stdev": 0.00031357187794755527
+    },
+    "docutils": {
+      "mean": 3.473566068445022,
+      "samples": 60,
+      "stdev": 0.13760386642807967
+    },
+    "dulwich_log": {
+      "mean": 0.060071863257326184,
+      "samples": 60,
+      "stdev": 0.0006531497790396266
+    },
+    "fannkuch": {
+      "mean": 0.5513726191750418,
+      "samples": 60,
+      "stdev": 0.003347685593322696
+    },
+    "float": {
+      "mean": 0.11354139333901306,
+      "samples": 60,
+      "stdev": 0.005845987550038544
+    },
+    "gc_traversal": {
+      "mean": 0.009723496876540593,
+      "samples": 60,
+      "stdev": 7.977144070657423e-05
+    },
+    "generators": {
+      "mean": 0.04517147501464933,
+      "samples": 60,
+      "stdev": 0.00017001234177554725
+    },
+    "go": {
+      "mean": 0.1541543498945733,
+      "samples": 60,
+      "stdev": 0.0006030922710754026
+    },
+    "hexiom": {
+      "mean": 0.008280438082874753,
+      "samples": 60,
+      "stdev": 5.9898650328370916e-05
+    },
+    "html5lib": {
+      "mean": 0.06905330089696994,
+      "samples": 60,
+      "stdev": 0.0011561904751950839
+    },
+    "json": {
+      "mean": 0.006527789013731914,
+      "samples": 60,
+      "stdev": 8.145984556224057e-05
+    },
+    "json_dumps": {
+      "mean": 0.013588009260517234,
+      "samples": 60,
+      "stdev": 8.15995457027544e-05
+    },
+    "json_loads": {
+      "mean": 3.758165510589606e-05,
+      "samples": 60,
+      "stdev": 2.4132830039309865e-07
+    },
+    "k_core": {
+      "mean": 4.016393875967091,
+      "samples": 60,
+      "stdev": 0.19823314532842667
+    },
+    "logging_format": {
+      "mean": 8.726101945436919e-06,
+      "samples": 60,
+      "stdev": 6.511463545249434e-08
+    },
+    "logging_silent": {
+      "mean": 1.5042453505031972e-07,
+      "samples": 60,
+      "stdev": 5.217945245141011e-10
+    },
+    "logging_simple": {
+      "mean": 7.95021759586234e-06,
+      "samples": 60,
+      "stdev": 5.384225341375214e-08
+    },
+    "mako": {
+      "mean": 0.016583801159868017,
+      "samples": 60,
+      "stdev": 7.883463225536624e-05
+    },
+    "many_optionals": {
+      "mean": 0.0008693291080514124,
+      "samples": 60,
+      "stdev": 1.1996033238252826e-05
+    },
+    "mdp": {
+      "mean": 2.2399838294057797,
+      "samples": 60,
+      "stdev": 0.016449455706826797
+    },
+    "meteor_contest": {
+      "mean": 0.13326559035728375,
+      "samples": 60,
+      "stdev": 0.0009616116398860395
+    },
+    "nbody": {
+      "mean": 0.1568037867390861,
+      "samples": 60,
+      "stdev": 0.0007569813598198287
+    },
+    "nqueens": {
+      "mean": 0.11312786804822585,
+      "samples": 60,
+      "stdev": 0.0011798966382101977
+    },
+    "pathlib": {
+      "mean": 0.021481808637812114,
+      "samples": 60,
+      "stdev": 0.00012467913782240943
+    },
+    "pickle": {
+      "mean": 1.846762756182822e-05,
+      "samples": 60,
+      "stdev": 1.0588116630288977e-07
+    },
+    "pickle_dict": {
+      "mean": 4.7095931962151856e-05,
+      "samples": 60,
+      "stdev": 1.4065554654081921e-07
+    },
+    "pickle_list": {
+      "mean": 7.291325686461884e-06,
+      "samples": 60,
+      "stdev": 4.624818205936005e-08
+    },
+    "pickle_pure_python": {
+      "mean": 0.0004409906950119572,
+      "samples": 60,
+      "stdev": 2.2430482047960724e-06
+    },
+    "pidigits": {
+      "mean": 0.2810835093880693,
+      "samples": 60,
+      "stdev": 0.0002653908889791457
+    },
+    "pprint_pformat": {
+      "mean": 2.121490005155404,
+      "samples": 60,
+      "stdev": 0.018875655513216134
+    },
+    "pprint_safe_repr": {
+      "mean": 1.0383226749332002,
+      "samples": 60,
+      "stdev": 0.007944167176427396
+    },
+    "pycparser": {
+      "mean": 1.6129170024457078,
+      "samples": 60,
+      "stdev": 0.028557808866992083
+    },
+    "pyflate": {
+      "mean": 0.6656398501402389,
+      "samples": 60,
+      "stdev": 0.002404022104675276
+    },
+    "pylint": {
+      "mean": 0.16587532682654757,
+      "samples": 60,
+      "stdev": 0.0022939331631346145
+    },
+    "python_startup": {
+      "mean": 0.016237849442404695,
+      "samples": 200,
+      "stdev": 0.0001823240589698358
+    },
+    "python_startup_no_site": {
+      "mean": 0.008758267807425,
+      "samples": 200,
+      "stdev": 7.5090782561883e-05
+    },
+    "raytrace": {
+      "mean": 0.3732972033166637,
+      "samples": 60,
+      "stdev": 0.001933338969425499
+    },
+    "regex_compile": {
+      "mean": 0.16841578975630303,
+      "samples": 60,
+      "stdev": 0.00048741273842051517
+    },
+    "regex_dna": {
+      "mean": 0.2743199982059499,
+      "samples": 60,
+      "stdev": 0.00553507058486347
+    },
+    "regex_effbot": {
+      "mean": 0.004338784246162201,
+      "samples": 60,
+      "stdev": 2.0918151851810394e-05
+    },
+    "regex_v8": {
+      "mean": 0.03460286122669155,
+      "samples": 60,
+      "stdev": 0.0002251513878087576
+    },
+    "richards": {
+      "mean": 0.06298971088447919,
+      "samples": 60,
+      "stdev": 0.0004895670958599638
+    },
+    "richards_super": {
+      "mean": 0.07096969071620454,
+      "samples": 60,
+      "stdev": 0.0003394432272131865
+    },
+    "scimark_fft": {
+      "mean": 0.4722658053816607,
+      "samples": 60,
+      "stdev": 0.0017835258423425434
+    },
+    "scimark_lu": {
+      "mean": 0.16668125771296521,
+      "samples": 60,
+      "stdev": 0.0005395131045668578
+    },
+    "scimark_monte_carlo": {
+      "mean": 0.09696775760191183,
+      "samples": 60,
+      "stdev": 0.0009964597326349877
+    },
+    "scimark_sor": {
+      "mean": 0.16788356946781277,
+      "samples": 60,
+      "stdev": 0.0011701456329913764
+    },
+    "scimark_sparse_mat_mult": {
+      "mean": 0.007872904159982378,
+      "samples": 60,
+      "stdev": 2.8397516034841346e-05
+    },
+    "shortest_path": {
+      "mean": 0.7734031246198962,
+      "samples": 60,
+      "stdev": 0.0023216363934886837
+    },
+    "spectral_norm": {
+      "mean": 0.1466171592163543,
+      "samples": 60,
+      "stdev": 0.0003739372427241156
+    },
+    "sphinx": {
+      "mean": 1.4476188036147506,
+      "samples": 60,
+      "stdev": 0.11285004100648012
+    },
+    "sqlalchemy_declarative": {
+      "mean": 0.15370310021874806,
+      "samples": 60,
+      "stdev": 0.0008333114699094012
+    },
+    "sqlalchemy_imperative": {
+      "mean": 0.019810512826855604,
+      "samples": 60,
+      "stdev": 0.00027817490045806907
+    },
+    "sqlglot_v2_normalize": {
+      "mean": 0.14633477980581422,
+      "samples": 60,
+      "stdev": 0.000593889825373658
+    },
+    "sqlglot_v2_optimize": {
+      "mean": 0.07172919153235853,
+      "samples": 60,
+      "stdev": 0.001363076304576835
+    },
+    "sqlglot_v2_parse": {
+      "mean": 0.0015350090765423375,
+      "samples": 60,
+      "stdev": 6.2143404455850135e-06
+    },
+    "sqlglot_v2_transpile": {
+      "mean": 0.0019115172675810755,
+      "samples": 60,
+      "stdev": 7.98603633829893e-06
+    },
+    "sqlite_synth": {
+      "mean": 4.370122740719277e-06,
+      "samples": 60,
+      "stdev": 9.590173051745666e-08
+    },
+    "subparsers": {
+      "mean": 0.015133457586246853,
+      "samples": 60,
+      "stdev": 0.0007321373100222356
+    },
+    "sympy_expand": {
+      "mean": 0.536466906266287,
+      "samples": 60,
+      "stdev": 0.0033112060773607516
+    },
+    "sympy_integrate": {
+      "mean": 0.022611010544157276,
+      "samples": 60,
+      "stdev": 0.00015343447219890434
+    },
+    "sympy_str": {
+      "mean": 0.3120440338893483,
+      "samples": 60,
+      "stdev": 0.0020398788531772846
+    },
+    "sympy_sum": {
+      "mean": 0.16797969538408022,
+      "samples": 60,
+      "stdev": 0.002059704074448782
+    },
+    "telco": {
+      "mean": 0.18466665834809343,
+      "samples": 60,
+      "stdev": 0.0008023631723504697
+    },
+    "thrift": {
+      "mean": 0.0011120035019606196,
+      "samples": 60,
+      "stdev": 1.0196922580752844e-05
+    },
+    "tomli_loads": {
+      "mean": 2.8572943007418266,
+      "samples": 60,
+      "stdev": 0.02736712203186001
+    },
+    "tornado_http": {
+      "mean": 0.1539689923170954,
+      "samples": 60,
+      "stdev": 0.002587165396216944
+    },
+    "typing_runtime_protocols": {
+      "mean": 0.00017053772805108262,
+      "samples": 60,
+      "stdev": 2.7901238652359896e-06
+    },
+    "unpack_sequence": {
+      "mean": 7.04805936967053e-08,
+      "samples": 60,
+      "stdev": 3.79124709535491e-10
+    },
+    "unpickle": {
+      "mean": 2.2814778852383218e-05,
+      "samples": 60,
+      "stdev": 4.4475535996506267e-07
+    },
+    "unpickle_list": {
+      "mean": 8.195565711351567e-06,
+      "samples": 60,
+      "stdev": 1.3847397408135406e-07
+    },
+    "unpickle_pure_python": {
+      "mean": 0.00030786603652813936,
+      "samples": 60,
+      "stdev": 8.365966288771087e-07
+    },
+    "urlsafe_base64_small": {
+      "mean": 0.0005474926466680093,
+      "samples": 60,
+      "stdev": 5.8989024833364925e-06
+    },
+    "xdsl_constant_fold": {
+      "mean": 0.05253084606956691,
+      "samples": 60,
+      "stdev": 0.000359012938372388
+    },
+    "xml_etree_generate": {
+      "mean": 0.13110540749815602,
+      "samples": 60,
+      "stdev": 0.0008412564707248536
+    },
+    "xml_etree_iterparse": {
+      "mean": 0.19266234263777732,
+      "samples": 60,
+      "stdev": 0.006199522029502334
+    },
+    "xml_etree_parse": {
+      "mean": 0.24804853084497153,
+      "samples": 60,
+      "stdev": 0.003922720761427611
+    },
+    "xml_etree_process": {
+      "mean": 0.09738418839406222,
+      "samples": 60,
+      "stdev": 0.0023454205217440776
+    }
+  },
+  "commit": "8e88bb56337a771f3af5edc5c3a5ba96ea2c3353",
+  "commit_date": "2026-07-04T19:39:11-04:00",
+  "configuration": {
+    "benchmark_hash": "ac5fd1",
+    "build_options": [
+      "--enable-optimizations",
+      "--enable-option-checking=fatal",
+      "--with-lto=full"
+    ],
+    "cflags": [
+      "-fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall"
+    ],
+    "compiler": [
+      "GCC 12.2.0"
+    ],
+    "cpu_config": "0-3=driver:cpufreq-dt, governor:performance; idle:none",
+    "cpu_model": "unknown",
+    "flags": [],
+    "machine": "blueberry",
+    "performance_version": "1.14.0",
+    "platform": "Linux-6.12.75+rpt-rpi-2712-aarch64-with-glibc2.36",
+    "python_series": "3.16"
+  },
+  "date": "2026-07-05",
+  "flags": [],
+  "id": "2597b8ca490e527188f5d66fa5916657dce95e39003467ce0c0b538cae2c93b4",
+  "machine": "blueberry",
+  "measured_at": "2026-07-05 15:28:20.432629",
+  "python_version": "3.16.0a0",
+  "raw_path": "raw/blueberry/2026-07-05/8e88bb56337a-2597b8ca490e.json.gz",
+  "source_blob": "883950484bd3dde2e547c63d1652f20420d4ee6c",
+  "source_commit": "3effbeb63f749d00ea91c833d56175c34fa109b7",
+  "source_path": "results/bm-20260704-3.16.0a0-8e88bb5/bm-20260704-blueberry-aarch64-python-8e88bb56337a771f3af5-3.16.0a0-8e88bb5.json",
+  "source_repo": "savannahostrowski/pyperf_bench",
+  "source_run_url": "https://github.com/savannahostrowski/pyperf_bench/actions/runs/28738679141",
+  "summary_path": "summaries/blueberry/2026-07-05/8e88bb56337a-2597b8ca490e.json"
+}
