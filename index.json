@@ -60153,8 +60153,125 @@
       "source_repo": "savannahostrowski/pyperf_bench",
       "source_run_url": "https://github.com/savannahostrowski/pyperf_bench/actions/runs/42496908013",
       "summary_path": "summaries/blueberry/2026-11-08/1955eb3ec065-a1c4a3c7664e.json"
+    },
+    {
+      "commit": "c07d1f4f32ed37d86110fb9d472cc59b90c11eb3",
+      "commit_date": "2026-11-09T08:28:35+08:00",
+      "configuration": {
+        "benchmark_hash": "ac5fd1",
+        "build_options": [],
+        "cflags": [],
+        "compiler": [
+          "MSC v.1950 64 bit (AMD64)"
+        ],
+        "cpu_config": "unknown",
+        "cpu_model": "unknown",
+        "flags": [
+          "TAILCALL"
+        ],
+        "machine": "prometheus",
+        "performance_version": "1.14.0",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python_series": "3.16"
+      },
+      "date": "2026-11-09",
+      "flags": [
+        "TAILCALL"
+      ],
+      "id": "510578ab1894846cce5e6b98e067d50345b35011fd20e404f07733a0ec4bca7b",
+      "machine": "prometheus",
+      "measured_at": "2026-11-09 12:03:29.609126",
+      "python_version": "3.16.0a1+dev",
+      "raw_path": "raw/prometheus/2026-11-09/c07d1f4f32ed-tailcall-510578ab1894.json.gz",
+      "source_blob": "026d891bbd38be8064aeff0c6983f27c4bafbb0d",
+      "source_commit": "a349e2bc66f2c6a136c1d82418fb1c4dec3b0e00",
+      "source_path": "results/bm-20261109-3.16.0a1+dev-c07d1f4-TAILCALL/bm-20261109-prometheus-amd64-python-c07d1f4f32ed37d86110-3.16.0a1+dev-c07d1f4.json",
+      "source_repo": "savannahostrowski/pyperf_bench",
+      "source_run_url": "https://github.com/savannahostrowski/pyperf_bench/actions/runs/42685214758",
+      "summary_path": "summaries/prometheus/2026-11-09/c07d1f4f32ed-tailcall-510578ab1894.json"
+    },
+    {
+      "commit": "c07d1f4f32ed37d86110fb9d472cc59b90c11eb3",
+      "commit_date": "2026-11-09T08:28:35+08:00",
+      "configuration": {
+        "benchmark_hash": "ac5fd1",
+        "build_options": [
+          "--enable-optimizations",
+          "--enable-option-checking=fatal",
+          "--with-lto=full",
+          "--with-tail-call-interp"
+        ],
+        "cflags": [
+          "-fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall"
+        ],
+        "compiler": [
+          "Clang 21.0.0 (clang-2100.1.1.101)"
+        ],
+        "cpu_config": "unknown",
+        "cpu_model": "unknown",
+        "flags": [
+          "TAILCALL"
+        ],
+        "machine": "jones",
+        "performance_version": "1.14.0",
+        "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+        "python_series": "3.16"
+      },
+      "date": "2026-11-09",
+      "flags": [
+        "TAILCALL"
+      ],
+      "id": "5528021865c8d38387c89a01edf9e6f6e4ad842441f21433fd38aff2c055957f",
+      "machine": "jones",
+      "measured_at": "2026-11-09 12:35:51.161287",
+      "python_version": "3.16.0a1+dev",
+      "raw_path": "raw/jones/2026-11-09/c07d1f4f32ed-tailcall-5528021865c8.json.gz",
+      "source_blob": "f1602339bd1025daaf76906dccc413add097c53d",
+      "source_commit": "a349e2bc66f2c6a136c1d82418fb1c4dec3b0e00",
+      "source_path": "results/bm-20261109-3.16.0a1+dev-c07d1f4-TAILCALL/bm-20261109-jones-arm64-python-c07d1f4f32ed37d86110-3.16.0a1+dev-c07d1f4.json",
+      "source_repo": "savannahostrowski/pyperf_bench",
+      "source_run_url": "https://github.com/savannahostrowski/pyperf_bench/actions/runs/42685214758",
+      "summary_path": "summaries/jones/2026-11-09/c07d1f4f32ed-tailcall-5528021865c8.json"
+    },
+    {
+      "commit": "c07d1f4f32ed37d86110fb9d472cc59b90c11eb3",
+      "commit_date": "2026-11-09T08:28:35+08:00",
+      "configuration": {
+        "benchmark_hash": "ac5fd1",
+        "build_options": [
+          "--enable-optimizations",
+          "--enable-option-checking=fatal",
+          "--with-lto=full"
+        ],
+        "cflags": [
+          "-fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall"
+        ],
+        "compiler": [
+          "GCC 13.3.0"
+        ],
+        "cpu_config": "0-5=driver:intel_pstate, intel_pstate:no turbo, governor:performance; idle:intel_idle",
+        "cpu_model": "Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz",
+        "flags": [],
+        "machine": "ripley",
+        "performance_version": "1.14.0",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "python_series": "3.16"
+      },
+      "date": "2026-11-09",
+      "flags": [],
+      "id": "d9da6b3ad09eeb19ff3c03577251df7129fe87827402bc3537c90235d5982a64",
+      "machine": "ripley",
+      "measured_at": "2026-11-09 20:05:15.063666",
+      "python_version": "3.16.0a1+dev",
+      "raw_path": "raw/ripley/2026-11-09/c07d1f4f32ed-d9da6b3ad09e.json.gz",
+      "source_blob": "4a119b6e69c47d0cbf31a60fc7efc23f1bec6f1b",
+      "source_commit": "a349e2bc66f2c6a136c1d82418fb1c4dec3b0e00",
+      "source_path": "results/bm-20261109-3.16.0a1+dev-c07d1f4/bm-20261109-ripley-x86_64-python-c07d1f4f32ed37d86110-3.16.0a1+dev-c07d1f4.json",
+      "source_repo": "savannahostrowski/pyperf_bench",
+      "source_run_url": "https://github.com/savannahostrowski/pyperf_bench/actions/runs/42685214758",
+      "summary_path": "summaries/ripley/2026-11-09/c07d1f4f32ed-d9da6b3ad09e.json"
     }
   ],
   "schema_version": 1,
-  "updated_at": "2026-11-08T19:10:32.698755+00:00"
+  "updated_at": "2026-11-09T22:43:07.824890+00:00"
 }
